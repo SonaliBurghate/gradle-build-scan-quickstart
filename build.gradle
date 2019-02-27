@@ -1,9 +1,15 @@
 plugins {
     id 'java'
+    id 'com.gradle.build-scan' version '2.1'
 }
 
 repositories {
     jcenter()
+}
+
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
 }
 
 dependencies {
